@@ -1,4 +1,5 @@
 package Patcher;
+# ABSTRACT: attempt to keep track of applied patches
 use strict;
 use warnings;
 use FindBin::libs;
@@ -215,8 +216,6 @@ sub _install_me {
 1;
 __END__
 =pod
-
-=head1 NAME patcher
 
 =head1 SYNOPSIS
 

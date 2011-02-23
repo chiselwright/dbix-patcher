@@ -7,6 +7,8 @@ use Test::More;
 use Test::Framework;
 use Path::Class::File;
 
+use TestData;
+my $schema = TestData->init_schema();
 
 note "Type stuff..";
 #my $target = Test::Meta::Framework->find_ilike_node('Node A2 ');

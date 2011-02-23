@@ -5,8 +5,13 @@ use Test::More;
 use Patcher::Schema;
 
 {
+    use TestData;
+
     my $schema;
     sub get_schema {
+    my $schema = TestData->init_schema();
+
+=for old_stuff
         $schema ||= Patcher::Schema->connect(
             'dbi:Pg:dbname=patcher;host=localhost',
             'www',
@@ -14,6 +19,7 @@ use Patcher::Schema;
         );
 
         #    undef,
+=cut
 
         return $schema;
     }
